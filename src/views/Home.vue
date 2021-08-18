@@ -1,11 +1,11 @@
 <template>
   <div class="home">
     <div>
-      <img :src="backgroundImg" alt="desktop-dark" class="background-img" />
+      <Background :theme="theme" />
       <header>
         <h1>TODO</h1>
         <div>
-          <Icon icon="check" />
+          <Icon @click="toggleTheme" :icon="theme" />
         </div>
       </header>
     </div>
@@ -13,29 +13,29 @@
 </template>
 
 <script>
-import desktopDark from '../assets/images/bg-desktop-dark.jpg'
+import Background from '../components/Background.vue'
 import Icon from '../components/Icon.vue'
 
 export default {
   name: 'Home',
   data() {
     return {
-      backgroundImg: desktopDark,
+      theme: true,
     }
   },
+  methods: {
+    toggleTheme() {
+      this.theme = !this.theme
+    },
+  },
   components: {
+    Background,
     Icon,
   },
 }
 </script>
 
 <style>
-.background-img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-}
 body {
   background: hsl(235, 21%, 11%);
 }

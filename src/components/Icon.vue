@@ -1,6 +1,6 @@
 <template>
   <svg
-    v-if="icon === 'sun'"
+    v-if="icon === true"
     xmlns="http://www.w3.org/2000/svg"
     width="26"
     height="26"
@@ -12,7 +12,7 @@
     />
   </svg>
   <svg
-    v-else-if="icon === 'moon'"
+    v-else-if="icon === false"
     xmlns="http://www.w3.org/2000/svg"
     width="26"
     height="26"
