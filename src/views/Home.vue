@@ -3,9 +3,13 @@
     <div>
       <Background :theme="theme" />
       <header>
-        <h1>TODO</h1>
-        <div>
-          <Icon @click="toggleTheme" :icon="theme" />
+        <div class="header">
+          <div class="title">
+            <h1>TODO</h1>
+          </div>
+          <div class="icon">
+            <Icon @click="toggleTheme" :icon="theme" />
+          </div>
         </div>
       </header>
     </div>
@@ -42,5 +46,21 @@ body {
 
 h1 {
   color: white;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+.title,
+.icon {
+  margin: 50px auto;
+  /* border: 1px solid white; */
 }
 </style>
