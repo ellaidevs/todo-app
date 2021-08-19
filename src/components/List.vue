@@ -24,7 +24,6 @@ export default {}
 input[type='checkbox'] {
   min-width: 20px;
   min-height: 20px;
-  /* padding: 10px; */
   border-radius: 50%;
   vertical-align: middle;
   border: 1px solid hsl(237, 14%, 26%);
@@ -45,6 +44,8 @@ input[type='checkbox']:checked {
 }
 
 input[type='text'] {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 18px;
   padding: 20px 20px;
   border-style: none;
   background: hsl(235, 24%, 19%);

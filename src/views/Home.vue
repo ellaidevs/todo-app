@@ -11,6 +11,7 @@
 <script>
 import Header from '../components/Header.vue'
 import List from '../components/List.vue'
+// import @url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 
 export default {
   name: 'Home',
@@ -20,11 +21,3 @@ export default {
   },
 }
 </script>
-
-<style>
-body {
-  background: hsl(235, 21%, 11%);
-  font-size: 18px;
-  color: white;
-}
-</style>
