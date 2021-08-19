@@ -28,7 +28,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 .background-img {
   position: absolute;
   top: 0;

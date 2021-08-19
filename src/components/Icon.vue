@@ -50,3 +50,9 @@ export default {
   props: ['icon'],
 }
 </script>
+
+<style scoped>
+svg {
+  cursor: pointer;
+}
+</style>
